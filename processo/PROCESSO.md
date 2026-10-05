@@ -88,6 +88,6 @@ Acesso: token fine-grained do Bento, só este repo, Contents read/write, válido
 2. Edição da imagem gerada pedindo para remover a linha → a linha voltou.
 3. Prompt de "tenda de luz branca" com a original → melhorou, mas o reflexo continuou no lado interno.
 4. Referência limpa v1 + prompt de tenda de luz → reflexo resolvido, mas a IA criou um **corte na banda** (aliança aberta), por causa de uma falha no recorte onde a pedra cobria a peça.
-5. **Referência limpa v2 (com fechamento de falhas) + prompt "solid closed band"** → aprovada no controle interno: sem linha escura, banda fechada, 5 pedras de cada lado. Job escolhido: `7199383b-afc3-4e65-a46a-ab526709b206`.
+5. **Referência limpa v2 (com fechamento de falhas) + prompt "solid closed band"** → aprovada no controle interno: sem linha escura, banda fechada, 5 pedras de cada lado. Job escolhido: `8cd5aa85-97dd-4b87-a10e-8146efcefa3e`.
 
 IDs úteis desta peça: original importada `185475b3-2f76-4dcb-a482-644e4dffe018` · recorte `120c44fd-6f69-4673-9ab3-54f97f255aa6` · referência limpa v2 `766829e5-27c5-48b0-84f0-461849244d13`.
