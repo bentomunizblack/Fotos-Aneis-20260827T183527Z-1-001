@@ -1,4 +1,13 @@
 peca,linha,posicao,arquivo,job_higgsfield,status,data
 ALI-BAS-001,BAS,1,premium/ALI-BAS/ALI-BAS-001_1.jpg,8cd5aa85-97dd-4b87-a10e-8146efcefa3e,aprovado,2026-10-05
-ALI-BAS-001,BAS,2,,,pendente,
-ALI-BAS-001,BAS,3,,,pendente,
+ALI-BAS-001,BAS,2,premium/ALI-BAS/ALI-BAS-001_2.jpg,bdc245ed-815e-4377-a2a1-d9f9a913f859,aprovado,2026-10-08
+ALI-BAS-001,BAS,3,premium/ALI-BAS/ALI-BAS-001_3.jpg,f6b50a74-517c-44aa-a253-cb103029c7ec,aprovado,2026-10-08
+ALI-FOS-001,FOS,1,premium/ALI-FOS/ALI-FOS-001_1.jpg,4cfbfdb9-324a-4166-9e3b-f416e33c7122,aprovado,2026-10-08
+ALI-FOS-001,FOS,2,,,pendente,
+ALI-FOS-001,FOS,3,,,pendente,
+ALI-ELI-001,ELI,1,premium/ALI-ELI/ALI-ELI-001_1.jpg,70c701f9-9712-4349-83e7-8cbaad984b1e,aprovado,2026-10-08
+ALI-ELI-001,ELI,2,,,pendente,
+ALI-ELI-001,ELI,3,,,pendente,
+ALI-PRA-001,PRA,1,premium/ALI-PRA/ALI-PRA-001_1.jpg,12e121ee-476c-4621-91f5-9faef6e66ef3,aprovado,2026-10-08
+ALI-PRA-001,PRA,2,,,pendente,
+ALI-PRA-001,PRA,3,,,pendente,
