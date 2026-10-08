@@ -16,6 +16,23 @@ Linhas: ELI 34 · 3G 29 · 5G 28 · BAS 26 · 4G 16 · BOD 16 · 68 10 · 1218 9
 
 As fotos foram feitas com a aliança sobre ametista, pedra preta ou expositor marrom. Ouro polido é espelho: a pedra aparece refletida na banda. A IA lê esse reflexo como parte da peça e reproduz uma **linha escura** na foto final. Corrigir por prompt ou por edição da imagem gerada **não resolve** (testado: o reflexo volta). A solução é tirar o reflexo **da referência**, antes da IA.
 
+## Calibração (08/10/2026) — qual caminho usar em cada foto
+
+Testado em BAS-001 (pedra ametista), FOS-001 e ELI-001 (expositor marrom) e PRA-001 (par de prata sobre pedra escura).
+
+- **Recorte do Higgsfield (remove background) só funcionou na BAS-001.** No expositor ele manteve a caixa marrom como se fosse a peça; na prata manteve a pedra inteira. Nesses casos o script de limpeza pinta a caixa/pedra e a referência fica inútil.
+- **Geração direta da foto original funcionou** em FOS, ELI e PRA: sem reflexo escuro, faixa fosca preservada (FOS), frisos preservados (ELI), uma pedra só (PRA).
+
+**Regra do lote:**
+1. **Caminho A (padrão): geração direta** da foto original com o prompt da linha. 2 créditos, sem recorte.
+2. Conferir com zoom no lado interno da banda. **Só se aparecer linha/mancha escura → Caminho B** (recorte + `etapa2_3.sh` + geração com referência limpa), como na BAS-001.
+3. Expositor: o prompt manda remover a caixa e completar a parte da aliança escondida na fenda.
+4. Fotos com 2 alianças: posição 1 mostra o par junto (uma em pé, outra encostada).
+
+Ajustes de prompt a aplicar: pedir a aliança ocupando ~70% do quadro (nas diretas ela saiu pequena) e, na prata, conferir se o fundo saiu branco puro (no teste saiu levemente acinzentado; corrigir com `convert -level 0%,96%` antes de subir).
+
+Jobs da calibração (posição 1, aguardando aprovação): FOS-001 `4cfbfdb9-324a-4166-9e3b-f416e33c7122` · ELI-001 `70c701f9-9712-4349-83e7-8cbaad984b1e` · PRA-001 `12e121ee-476c-4621-91f5-9faef6e66ef3`. BAS-001 posições 2 e 3: `bdc245ed-815e-4377-a2a1-d9f9a913f859` (deitada) · `f6b50a74-517c-44aa-a253-cb103029c7ec` (close).
+
 ## Etapa 0 — Agrupar por peça (antes de gastar crédito)
 
 Há várias fotos da mesma aliança em ângulos diferentes (ex.: BAS-002 e BAS-003 são a mesma peça). Montar a planilha de controle com uma linha por **peça**, escolhendo o melhor ângulo. Só a foto escolhida entra no pipeline.
